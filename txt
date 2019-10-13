@@ -1,0 +1,126 @@
+<a data-toggle="modal" data-target="#myModal" href="#" data-hover="Appoinment"><span><font color="blue"><u> + Appoinment</u></font></span></a>   
+              </div>
+              <!-- start modal window -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Appoinment Details</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="appointment-area">
+                        <form name="appointment" class="appointment-form" action="bookappointment.php" method="post" onsubmit="return validate();">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Your name <span class="required">*</span>
+                              </label>
+                              <input type="text" name="name" class="wp-form-control wpcf7-text" placeholder="Your name" value="<?php echo $row['firstname'].' '.$row['lastname']; ?>">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Your Email <span class="required">*</span>
+                              </label>
+                              <input type="mail" nae="email" class="wp-form-control wpcf7-email" placeholder="Email address" value="<?php echo $row['email'];?>">  
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Your Birth <span class="required">*</span>
+                              </label>
+                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Your Phone <span class="required">*</span>
+                              </label>
+                              <input type="text" name="contact" class="wp-form-control wpcf7-text" placeholder="Phone No" value="<?php echo $row['contact'];?>">  
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Appointment Date <span class="required">*</span>
+                              </label>
+                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Select Department <span class="required">*</span>
+                              </label>
+                              <select class="wp-form-control wpcf7-select">
+                                <option val="1">Dental</option>
+                                <option val="2">cardiology</option>
+                                <option val="3">neurology</option>
+                                <option val="4">Drugstore</option>
+                                <option val="5">x-ray</option>
+                                <option val="6">birth</option>
+                                <option val="7">general</option>
+                                <option val="8">testing</option>
+                                <option val="9">first-aid</option>
+                                <option val="10">immunizations</option><option val="11">pulmonary</option>
+                              </select> 
+                            </div>
+                          </div>         
+                          <input type="text" class="wp-form-control wpcf7-text" placeholder="Subject">
+                          <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="What would you like to tell us"></textarea>
+                         <button class="wpcf7-submit button--itzel" type="submit" value="OK"><i class="button__icon fa fa-share" ></i><span>Book Appointment</span></button>  
+                        </form>
+                        <script>
+									function validate()
+									{
+										alert("here");
+										var name=document.getElementById('name');
+										var email=document.appointment.email;
+										var contact=document.appointment.contact;
+										var e_con=document.appointment.contact;
+										//echo "inside validate<br><br>";
+										if(name.value == '')
+										{
+											alert('Please enter name ');
+											name.focus();
+											return false;
+										}
+										else
+										if(!(/^[a-zA-Z ]+$/.test(name.value)))
+										{
+											alert('Please characters only');
+											name.focus();
+											return false;
+										}
+										else
+										if(name.value.length > 30)
+										{
+											alert('Max 30 characters only');
+											name.focus();
+											return false;
+										}
+										else if(email.value == '')
+										{
+											alert('Please enter email ');
+											email.focus();
+											return false;
+										}
+										else
+										if(!(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}+?\.[a-zA-Z]{2,3}$/.test(email.value)))
+										{
+											alert('please enter valid email address');
+											email.focus();
+											return false;
+										}
+										else if(contact.value == '')
+										{
+											alert('Please enter contact ');
+											contact.focus();
+											return false;
+										}
+									return true;
+							}
+					</script>
+                      </div>
+                    </div>                    
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div>
+          </div>
+        </div>
+        <!-- End Single Top Feature -->
+      </div>
+    </section>

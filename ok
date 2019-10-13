@@ -1,0 +1,24 @@
+insert into consultant values ('Dr. Rahul Patil','Cardiologist','Rahul Patil.jpg','Hridayam Heart Care Clinic,301 Choice A Apartment, Opposite Ruby Hall, B S Dhole Patil Road, Pune - 411001.','Best Cardiologist in India is a very subjective term, as there are a number of doctors in India specializing in Cardiology across several top hospitals. Dr. Rahul Raosaheb Patil is notably amongst one of the best-known Cardiologist in Pune as well as in India. He is an expert Interventional Cardiologist in Pune, practice since 2006 and Director, Interventional Cardiology, at Hridayam Heart Clinic in Pune. He has also served as a Consultant Cardiologist at Ruby Hall Clinic since 2006. In addition, Dr. Patil teaches at BJ Medical College & Sassoon General Hospital, in the capacity of Assistant Professor.');
+ 
+ Cardiologist
+ 2.
+ 
+insert into consultant values ('Dr. Jagdish Hiremath','Cardiologist','Dr-Jagdish-Hiremath.png','301, Choice A Apartment, Opposite Ruby Hall, BS Dhole Patil Path, Pune, Maharashtra 411001','Dr. Jagdish Hiremath, President of the Cardiology Society of India (Pune Chapter) is a renowned interventional cardiologist who has been practicing in Pune for over 25 years. He currently serves as the Director – Cath Lab, Ruby Hall Clinic. In his previous capacity, he was the Director - Non-invasive Cardiology & Director- CCU at Ruby Hall Clinic and was also known for his role as Chief of Cardiology - Poona Hospital.');
+
+
+insert into consultant values ('Dr. Abhijeet Palshikar','Cardiologist','Abhijeet pashilkar.jpg','Flat No 10, 4th Floor, Yash Arcade, Opposite Konkan Express, Restaurent, Karve Road, Kothrud, Pune,Maharashtra 411038','Dr. Abhijeet Palshikar is a Senior Consultant Cardiologist based in Pune. With more than 15 years of experience in Interventional Cardiology, he is leader in Cardiology field in Pune.'
+'Trained under DR D B Pehlajani, Cardiologist who performed FIRST ANGIOPLASTY in INDIA, Dr Palshikar is keeping up with latest development
+in the field.Besides being Head of Department of Cardiology at Sayhadri Hospital, He is Director of the Cardiac Cath Lab at Sant Dnyaneshwar  and Deoyani Multispeciality Hospital. In addition, he is attached to Ruby Hall Clinic, Poona Hospital, NM Wadia Hospital  and Jehangir Hospital.Dr. Palshikar specializes in Complex Angioplasties and various Cardiac Invasive procedures.');
+
+
+
+insert into consultant values('Dr. Snita Sinukumar','Cancer','snitaw.jpg','The Destination Clinic,, Destination Center,, Magarpatta City,, Hadapsar,, Pune, Maharashtra 411028','Dr. Snita Sinukumar is the First lady Cancer Surgeon in pune, who has obtained a Superspeciality, Mch Degree In Surgical Oncology From Tata Memorial Hospital and  is highly familiar with the diagnosis and treatment of multiple cancer sites and having vast experience in various cancer surgeries such as Weirtheims surgery, Commando operations, Thyroidectomy, Breast conservative surgery, Mastectomy, whipples surgery, Colorectal surgery, Radical Nephrectomy and Cytoreductive surgery for Ovary cancer.');
+
+
+
+insert into consultant values('Dr. Gajanan Kanitkar','Cancer','Gajanan.jpg','Ruby Hall Clinic, 40, Sassoon Road, Opposite Jehangir Hospital, Pune, Maharashtra 411001','Dr Gajanan Kanitkar is a well known Cancer Surgeon trained from Tata Memorial Hospital, Mumbai. He has experience of more than 15 years in the field of Oncol.ogy He specializes in Laparoscopic/ Keyhole surgery for Cancer. He treats all Cancers - Gastrointestinal, Thoracic, Head and Neck, Breast and Gynecologic Cancers. Presently he is a consultant surgical oncologist in Punes prime institutes like Ruby Hall Clinic, Jupiter Hospital, Jehangir Hospital. He has excellent surgical skills and is appreciated by his patients as a very caring and compassionate doctor. Dr Kanitkar has been working on many innovations in the field of laparoscopic surgery in cancer. He is also an active member of the Maharashtra Cancer Warriors, a group of doctors fighting cancer all over Maharashtra. He has conducted many cancer detection camps, community projects along with Rotary International for cancer awareness.');
+
+
+insert into consultant values('Dr. Pranjali Gadgil','Cancer','pranjali.jpg','Jupiter hospital pune Near, Prathamesh Park, Baner, Pune, Maharashtra 411045','Breast Surgeon, Dr Pranjali Gadgil, specialises in diagnosis and treatment of all breast problems, benign and malignant. She is an American Board Certified Surgeon and is a Fellow in Breast Diseases.Under her care, you can expect accurate diagnostics, advanced modern-day surgical treatment, and compassionate care. She loves to spend time with her patients and is always happy to answer all questions you and your may family have.');
+
+

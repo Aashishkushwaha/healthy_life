@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<pre>
+<head>
+<style>
+	.btn
+	{
+		border-color: red;
+		color: white;
+		padding: 14px 28px;
+		font-size: 16px;
+		background-color: #2196F3;
+	}
+	.btn:hover {background-color: #0b7ddf;}
+</style>
+<body>
+	<!--<div id="demo">
+		<h2>Click Here for more info <br></h2>
+		<button class="btn" type="button" onclick="info()">Click Here </button>
+	</div>-->
+	<div id="demo">
+		<label class="control-label">Select Doctor <span class="required">*</span>
+      	</label>
+      	<select id="doctor" onchange="update(this.value)">
+        	<option >Dental</option>
+        	<option >Cardiologist</option>
+		    <option >neurology</option>
+		    <option >Drugstore</option>
+		    <option >x-ray</option>
+		    <option >birth</option>
+		    <option >general</option>
+		    <option >testing</option>
+		    <option >first-aid</option>
+		    <option >immunizations</option><option val="11">pulmonary</option>
+   		</select> 
+  	<!--<br/>-->
+  <select id="data">
+    <option>Select an Option...</option>
+  </select>
+  	</div>
+</body>
+<script type="text/javascript">
+   function update(str)
+   {
+   	  alert("Str:" + str);
+      var xmlhttp;
+
+      if (window.XMLHttpRequest)
+      {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }	
+
+      xmlhttp.onreadystatechange = function() {
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+        {
+          document.getElementById("data").innerHTML = xmlhttp.responseText;
+        }
+      }
+
+      xmlhttp.open("GET","doctor_ajax.php?opt="+str, true);
+      xmlhttp.send();
+  }
+</script>
+</head>
+</html>
+
+
+<!--<script>
+/*	function info(str) {
+	  alert(str);
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+    	if (this.readyState == 4 && this.status == 200) {
+    	 document.getElementById("demo").innerHTML = this.responseText;
+    	 //document.write(this.statusText);//.alert(this.statusText);
+    	}
+  	};
+  	xhttp.open("GET", "ajaxinfo.txt", true);
+  	xhttp.send();
+	}*/
+	/*function info()
+	{
+		var ob = new XMLHttpRequest();
+		ob.open("GET","ajaxinfo.txt",true);
+		ob.send();
+		ob.onReadyStateChange = 
+		function()
+		{
+			if(readyState == 4 && status == 200)
+			{
+				document.getElementById("demo").innerHTML = this.responseText;
+			}
+		}
+		
+	}*/
+</script>-->

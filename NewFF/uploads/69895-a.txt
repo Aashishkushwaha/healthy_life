@@ -1,0 +1,5 @@
+PATH=$PATH:/home/pratik/tomcat7.0/bin:
+CLASSPATH=$CLASSPATH:/home/pratik/tomcat7.0/lib/servlet-api.jar:
+CATALINA_HOME=/home/pratik/tomcat7.0
+JAVA_HOME=/opt/jdk1.7
+JRE_HOME=/opt/jdk1.7/jre
